@@ -1,10 +1,10 @@
 package odev;
 
 import java.util.ArrayList;
-
+import java.util.List;
 public class Blockchain {
 
-    private ArrayList<Block> blockchain;
+    private List<Block> blockchain;
 
     public Blockchain() {
         this.blockchain = new ArrayList<>();
@@ -15,7 +15,7 @@ public class Blockchain {
         this.blockchain.add(block);
     }
 
-    public ArrayList<Block> getBlockChain() {
+    public List<Block> getBlockChain() {
         return this.blockchain;
     }
 
@@ -27,7 +27,7 @@ public class Blockchain {
 
         Block currentBlock;
         Block previousBlock;
-        
+      
 
         for (int i = 1; i < blockchain.size(); i++) {
             currentBlock = blockchain.get(i);
@@ -43,7 +43,7 @@ public class Blockchain {
                 return false;
             }
             
-            
+         
         }
     return true;
     }
